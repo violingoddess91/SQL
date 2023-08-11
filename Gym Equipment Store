@@ -1,0 +1,27 @@
+**Project: Design a Store Database.
+Create your own store!
+Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. 
+You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store.
+You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items.**
+
+CREATE TABLE gym_equipment_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO gym_equipment_store VALUES 
+(1, "leggings", 20.00, 10),
+(2, "crop top", 30.00, 20),
+(3, "sports bra", 25.50, 10),
+(4, "shorts", 15.00, 5),
+(5, "gloves", 10.25, 7),
+(6, "dumbbells", 30.50, 10),
+(7, "kettlebells", 55.55, 4),
+(8, "barefoot shoes", 80.99, 3),
+(9, "lifting belt", 30.55, 15),
+(10, "wrist straps", 40.25, 20),
+(11, "waist trainer", 60.00, 10),
+(12, "energy drinks", 25.25, 12),
+(13, "protein powder", 49.99, 50),
+(14, "knee sleeves", 35.99, 5),
+(15, "yoga mat", 34.99, 8);
+
+SELECT * FROM gym_equipment_store ORDER BY price asc;
+SELECT sum(quantity) FROM gym_equipment_store;
